@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Play:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Play:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+*{margin:0;padding:0;}
+ul{
+  padding-right: 0;
+  display: block;
+  list-style: none;
+  background-color: black;
+  height: calc(100px + 30vw + 10vh);
+  overflow: hidden;
+}
+li{
+  display : flex;
+  margin: auto;
+  justify-content: center;
+  padding-top: calc(10px + 2vh);
+  font-size: calc(10px + 5vw);
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+a{
+  text-decoration: none;
+  color:white;
+}
+#profile{
+  display: flex;
+  width: 90vw;
+
+  border: 6.5px solid #34A40CE6;
+  background-color: #01081CE6;
+  border-radius: 20px;
+  margin : auto;
+ justify-content: center;
+padding-top: 20px;
+padding-left: 4vw;
+overflow: hidden;
+  
+}
+#idcard{
+}
+#main{
+  display:flex;
+  color: white;
+}
+.pre1{
+  font-size: 3vw;
+  color : yellow;
+}
+.pre1 a{
+  text-decoration: none;
+  color: yellow;
+}
+font{
+  color : #34A40CE6;
+  font-size: 4vw;
+}
+s1{
+  font-size: 10vw;
+}
+button{
+  display: flex;
+  width: calc(20px + 30vw);
+  height: calc(20px + 6.7vh);
+  margin: auto;
+  background-color: #DBDBDB;
+  font-size: calc(2vh + 2vw);
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4vh;
+  color:white;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  overflow: hidden;
+}
+button:hover{
+  color : #DBDBDB;
+  background-color : white;
+}
+.heading{
+  font-size: calc(7px + 8vw);
+  font-family:  "Platypi", serif;
+  font-style: normal;
+}
+.blog{
+  padding-top: calc(2vw + 1vh);
+  display: flex;
+  background-color: #F0F1F4;
+  width: 99vw;
+  flex-direction: column;
+  overflow: hidden;
+}
+.notepad{
+background: #F8FFE9;
+width: 98vw;
+margin: auto;
+padding: 1.4vw;
+box-shadow: .1px .5px 5px rgba(0,0,0,.1);
+font-size: calc(1.5vh + 1vw);
+}
+
+f1{
+display: inline-flex;
+font-size: calc(1.8vh + 1.3vw);
+font-style : italic;
+font-style:  "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal;
+
+}
+.part1{
+  overflow: hidden;
+  
+}
+.part2{
+  display: inline;
+  overflow: hidden;
+}
+.read-more-btn{
+  color: #0984e3;
+}
+.read-more-text {
+  display: none;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.read-more-text--show {
+  display: inline;
+}
+.container{
+  font-family: "Merriweather", serif;
+   font-weight: 700;
+  font-style: normal;
+}
+.box1{
+  
+}
+#pdf{
+  color: red;
+}
+.logo{
+  display : flex;
+height : calc(30px + 6vh + 6vw );
+width: calc(30px + 6vh + 6vw );
+border-radius: calc(2000vw );
+margin: auto;
+justify-content: center;
+}
+.fotter{
+  background: white;
+}
+.pen{
+  display : flex;
+  height : calc(30px + 6vh + 6vw);
+  width: calc(30px + 6vh + 6vw);
+  margin: auto;
+  justify-content: center;
+}
+font01{
+  display: flex;
+  margin: auto;
+  font-size: calc(10px + 1vh + 1vw);
+  color: black;
+  justify-content: center;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.aks{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  border-radius: calc(20px + 1vw + 0.6vh);
+  width: calc(30px + 20vw + 16vh);
+}
+font02{
+  display: flex;
+  font-size: calc(5px + 1vh + 2.5vw);
+  color: white;
+  width: 80vw;
+}
+  </style>
+</head>
+<body>
+<div class="container">
+<ul>
+<li><a href="#profile">MyProfile</a></li>
+<li><a href="#work">MyWork</a></li>
+<li><a href="#blog">MyBlogs</a></li>
+<li><a href="feed.html">YourFeedback</a></li>
+</ul>
+</div>
+<div id="main">
+<div id="profile">
+<div id="idcard">
+<img src="aks.jpg" alt="myimg"class="aks">
+<br><br>
+<pre class="pre1">
+Noun-online : Mr.Aayush Kumar Singh(A.K.S)
+Profession : Web and comp. program dev.
+Motive : Solve the problems by stuďying it.
+</pre>
+<br>
+<br>
+<font02>Hello viewers , welcome here. I am here to solve your problems and create an opportunity to present you online with your own platform. </font02>
+<br>
+<pre class="pre1">
+<a href="#contact">Mail me by clicking here</a>
+<br>
+ <a href="#hier">Work with me by clicking here</a>
+<br>
+I am available at: <a href="">FREELANCER</a><img src="" alt="">
+                   <a href="">FIVERR</a>
+                   <a href="">FACEBOOK</a>
+                   <a href="">TWITTER</a>
+                   <a href="">MYMEDIA</a>
+                   <a href="">CHATNITY</a>
+                   <a href="">YOUTUBE</a>
+                   <a href="">EMAIL</a>
+<font>   
+Hi friends,I am A.K.S.
+Welcome to my platform.
+This is my way of introduction.
+Hope you like it.
+                Welcome to my
+online world.
+According to me,programming 
+is nothing to learn.
+  Only adopt it,explore it,
+think through it and think
+beyond it.
+    Thankyou <a href=""><s1>👍</s1></a>
+</font>
+</pre>
+</div>
+</div>
+</div>
+<div id="work">
+<div id="mywork"></div>
+</div>
+<div id="blog"class="blog">
+<div class="heading">
+My Blog Section
+</div>
+<br>
+<br>
+<div class="notepad" id="note1">
+  <p>
+<f1>Topic : Our environment <br>Author : Mr.Aayush Kumar Singh</f1>
+<br><br>
+<img src="img//aayush.jpg" alt="logo"class="logo">
+<br><br>
+
+
+
+  <div class="read-more-container">
+
+        <div class="container">
+            <p>
+Environment , which is the base of our life , contains everything around us which we want . But are we aware of that nature which is cradle of all the living organism , the one who cares for us and provide us everything without demanding anything in return . Should'nt we grateful to it and pay homage in some of our way.Let's explore it .  <br>
+<span class="read-more-text"><br>Hello everyone,I am Aayush Kumar Singh, welcoming you all to my section . 
+First of all , I would like to present my special gratitude to all the readers .
+Moving to the motive , let's move to the page of article , because real joy of reading is with books and touching the pages . <br><br><a href="oe.docs"id="pdf">Click to move to the page . </a>
+</span>
+</p>
+<span class="read-more-btn">Read More...</span>
+</div>
+<br><br>
+
+
+
+<!---Next article--->
+
+
+
+ <div class="container">
+   <p>
+
+<div class="notepad" id="note1">
+  <p>
+<f1>Topic : Nature <br>Author : Mr.Aayush Kumar Singh</f1><br><br>
+<img src="img//aayush.jpg" alt="logo"class="logo">
+<br><br>
+<div class="read-more-container">
+
+Nature , the mother of whole life system , consist of everything around us . It is the base of development and balance. <br>
+Sometime , nature is the most beautiful thing present around us , on the other hand , it is assumed as the most destructive among all threats for life . <br>
+Let's explore the nature now . 
+
+<br><br>
+</div>
+<span class="read-more-text">
+Nature is a vast and complex system that encompasses all living things on Earth, as well as the physical environment in which they live. It is a dynamic and ever-changing system, and its beauty and complexity have inspired artists, writers, and scientists for centuries. <br><br>
+<a href="oe.docs"id="pdf">Click to move to the page . </a>
+</span>
+   </p>
+   <span class="read-more-btn">Read More...</span>
+ </div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+<br>
+<div class="fotter">
+<a href="feed.html">
+<button>Your Feedback</button>
+</a><br>
+<a href="becomeawriter.html">
+<img src="pen.jpg" alt="become a writer"class="pen">
+<br><font01>Become a Writer</font01>
+</a>
+</div>
+<br><br><br>
+<script src="main.js"></script>
+</body>
+</html>
